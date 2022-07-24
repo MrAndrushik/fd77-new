@@ -1,0 +1,46 @@
+@import "../const";
+
+.title {
+    margin-bottom: 20px;
+
+    @media (max-width: $md) {
+        margin-bottom: 15px;
+    }
+}
+
+.swiper {
+    padding: 0 15px;
+
+    @media (max-width: $md) {
+        padding: 0 15px;
+    }
+}
+
+.swiperSlide {
+    width: auto;
+    position: relative;
+}
+
+.slide {
+    transition: $transition;
+    width: 644px;
+    height: 347px;
+    position: relative;
+
+    & > span {
+        border-radius: 10px;
+    }
+
+    @media (max-width: $xl) {
+        width: 277px;
+        height: 149px;
+    }
+}
+
+.galleryWrapper {
+    height: 347px;
+
+    @media (max-width: $xl) {
+        height: 149px;
+    }
+}

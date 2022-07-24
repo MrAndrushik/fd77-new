@@ -1,0 +1,481 @@
+{
+    "title": "Дополните фуд трак",
+    "tags": ["Все", "Мебель", "Персонал", "Генераторы", "Урны", "Санитайзеры", "Мастер-классы"],
+    "catalog": [
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-1.jpg",
+            "caption": "Деревянный стол с лавками",
+            "startPrice1": "1200",
+            "startPrice2": "600",
+            "id": 1
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-2.jpg",
+            "caption": "Диван из паллет двухместный",
+            "startPrice1": "1900",
+            "startPrice2": "800",
+            "id": 2
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-3.jpg",
+            "caption": "Диван из паллет угловой",
+            "startPrice1": "5500",
+            "startPrice2": "1500",
+            "id": 3
+        },
+        {
+            "tags": ["Санитайзеры"],
+            "imgSrc": "/img/foodtrucks/dopi-dezinfekziya-1.jpg",
+            "caption": "Сенсорный на стойке",
+            "startPrice1": "3000",
+            "startPrice2": "1500",
+            "id": 4
+        },
+        {
+            "tags": ["Генераторы"],
+            "imgSrc": "/img/foodtrucks/dopi-prochee-1.jpg",
+            "caption": "Генератор 4 кВт",
+            "startPrice1": "6000",
+            "startPrice2": "5000",
+            "id": 5
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-4.jpg",
+            "caption": "Зонт уличный 3 м² с центральной опорой",
+            "startPrice1": "9000",
+            "startPrice2": "4000",
+            "id": 6
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-6.jpg",
+            "caption": "Стойка «Бочки дубовые»",
+            "startPrice1": "8000",
+            "startPrice2": "3000",
+            "id": 7
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-7.jpg",
+            "caption": "Стол Бочка",
+            "startPrice1": "1400",
+            "startPrice2": "600",
+            "id": 8
+        },
+        {
+            "tags": ["Урны"],
+            "imgSrc": "/img/foodtrucks/dopi-urni-6.jpg",
+            "caption": "Ведро мусорное 105 литров",
+            "startPrice1": "400",
+            "startPrice2": "180",
+            "id": 9
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-8.jpg",
+            "caption": "Стойка «Железные бочки»",
+            "startPrice1": "4000",
+            "startPrice2": "2000",
+            "id": 10
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-16.jpg",
+            "caption": "Коктейльный стол",
+            "startPrice1": "500",
+            "startPrice2": "250",
+            "id": 11
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-15.jpg",
+            "caption": "Банкетный стол",
+            "startPrice1": "750",
+            "startPrice2": "250",
+            "id": 12
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-17.jpg",
+            "caption": "Фуршетный стол",
+            "startPrice1": "750",
+            "startPrice2": "250",
+            "id": 13
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-10.jpg",
+            "caption": "Паллетный стол",
+            "startPrice1": "990",
+            "startPrice2": "400",
+            "id": 14
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-11.jpg",
+            "caption": "Стол Лофт",
+            "startPrice1": "5500",
+            "startPrice2": "2000",
+            "id": 15
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-12.jpg",
+            "caption": "Пуфик из поддонов",
+            "startPrice1": "550",
+            "startPrice2": "200",
+            "id": 16
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-13.jpg",
+            "caption": "Кресло из поддонов",
+            "startPrice1": "800",
+            "startPrice2": "300",
+            "id": 17
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-9.jpg",
+            "caption": "Складной стул пластик",
+            "startPrice1": "100",
+            "startPrice2": "50",
+            "id": 18
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-19.jpg",
+            "caption": "Кресло мешок",
+            "startPrice1": "250",
+            "startPrice2": "100",
+            "id": 19
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-18.jpg",
+            "caption": "Пуфик мяч",
+            "startPrice1": "900",
+            "startPrice2": "450",
+            "id": 20
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-mebel-5.jpg",
+            "caption": "Шезлонг",
+            "startPrice1": "500",
+            "startPrice2": "250",
+            "id": 21
+        },
+        {
+            "tags": ["Мебель"],
+            "imgSrc": "/img/foodtrucks/dopi-prochee-5.jpg",
+            "caption": "Шатёр пагода",
+            "startPrice1": "7000",
+            "startPrice2": "2500",
+            "id": 22
+        },
+        {
+            "tags": ["Персонал"],
+            "imgSrc": "/img/foodtrucks/dopi-personal-1.jpg",
+            "caption": "Официант",
+            "startPrice1": "5000",
+            "startPrice2": "4000",
+            "id": 23
+        },
+        {
+            "tags": ["Персонал"],
+            "imgSrc": "/img/foodtrucks/dopi-personal-2.jpg",
+            "caption": "Повар",
+            "startPrice1": "7000",
+            "startPrice2": "6000",
+            "id": 24
+        },
+        {
+            "tags": ["Персонал"],
+            "imgSrc": "/img/foodtrucks/dopi-personal-3.jpg",
+            "caption": "Клининг",
+            "startPrice1": "3500",
+            "startPrice2": "3000",
+            "id": 25
+        },
+        {
+            "tags": ["Персонал"],
+            "imgSrc": "/img/foodtrucks/dopi-personal-4.jpg",
+            "caption": "Кассир",
+            "startPrice1": "4500",
+            "startPrice2": "4000",
+            "id": 26
+        },
+        {
+            "tags": ["Персонал"],
+            "imgSrc": "/img/foodtrucks/dopi-personal-6.jpg",
+            "caption": "Грузчик",
+            "startPrice1": "3000",
+            "startPrice2": "2700",
+            "id": 27
+        },
+        {
+            "tags": ["Персонал"],
+            "imgSrc": "/img/foodtrucks/dopi-personal-7.jpg",
+            "caption": "Диджей",
+            "startPrice1": "15000",
+            "startPrice2": "13000",
+            "id": 28
+        },
+        {
+            "tags": ["Персонал"],
+            "imgSrc": "/img/foodtrucks/dopi-personal-8.jpg",
+            "caption": "Бармен",
+            "startPrice1": "5500",
+            "startPrice2": "5000",
+            "id": 29
+        },
+        {
+            "tags": ["Персонал"],
+            "imgSrc": "/img/foodtrucks/dopi-personal-9.jpg",
+            "caption": "Бариста",
+            "startPrice1": "5000",
+            "startPrice2": "4000",
+            "id": 30
+        },
+        {
+            "tags": ["Персонал"],
+            "imgSrc": "/img/foodtrucks/dopi-personal-5.jpg",
+            "caption": "Аниматор",
+            "startPrice1": "250",
+            "startPrice2": "100",
+            "id": 31
+        },
+        {
+            "tags": ["Урны"],
+            "imgSrc": "/img/foodtrucks/dopi-urni-1.jpg",
+            "caption": "Ведро мусорное 20 литров",
+            "startPrice1": "100",
+            "startPrice2": "60",
+            "id": 32
+        },
+        {
+            "tags": ["Урны"],
+            "imgSrc": "/img/foodtrucks/dopi-urni-2.jpg",
+            "caption": "Ведро мусорное 40 литров",
+            "startPrice1": "150",
+            "startPrice2": "80",
+            "id": 33
+        },
+        {
+            "tags": ["Урны"],
+            "imgSrc": "/img/foodtrucks/dopi-urni-3.jpg",
+            "caption": "Ведро мусорное 60 литров",
+            "startPrice1": "200",
+            "startPrice2": "100",
+            "id": 34
+        },
+        {
+            "tags": ["Урны"],
+            "imgSrc": "/img/foodtrucks/dopi-urni-4.jpg",
+            "caption": "Урна 60 литров",
+            "startPrice1": "250",
+            "startPrice2": "100",
+            "id": 35
+        },
+        {
+            "tags": ["Урны"],
+            "imgSrc": "/img/foodtrucks/dopi-urni-5.jpg",
+            "caption": "Урна 80 литров",
+            "startPrice1": "350",
+            "startPrice2": "150",
+            "id": 36
+        },
+        {
+            "tags": ["Урны"],
+            "imgSrc": "/img/foodtrucks/dopi-urni-7.jpg",
+            "caption": "Ведро мусорное 120 литров",
+            "startPrice1": "500",
+            "startPrice2": "200",
+            "id": 37
+        },
+        {
+            "tags": ["Урны"],
+            "imgSrc": "/img/foodtrucks/dopi-urni-8.jpg",
+            "caption": "Мусорный бак 240 литров",
+            "startPrice1": "750",
+            "startPrice2": "250",
+            "id": 38
+        },
+        {
+            "tags": ["Урны"],
+            "imgSrc": "/img/foodtrucks/dopi-urni-9.jpg",
+            "caption": "Урна сенсорная 21 литр",
+            "startPrice1": "3500",
+            "startPrice2": "1500",
+            "id": 39
+        },
+        {
+            "tags": ["Санитайзеры"],
+            "imgSrc": "/img/foodtrucks/dopi-dezinfekziya-2.jpg",
+            "caption": "Сенсорный для рук",
+            "startPrice1": "6000",
+            "startPrice2": "4000",
+            "id": 40
+        },
+
+        {
+            "tags": ["Санитайзеры"],
+            "imgSrc": "/img/foodtrucks/dopi-dezinfekziya-3.jpg",
+            "caption": "Сенсорный для рук и ног",
+            "startPrice1": "8000",
+            "startPrice2": "4500",
+            "id": 41
+        },
+
+        {
+            "tags": ["Санитайзеры"],
+            "imgSrc": "/img/foodtrucks/dopi-dezinfekziya-4.jpg",
+            "caption": "Ножной",
+            "startPrice1": "2500",
+            "startPrice2": "1250",
+            "id": 42
+        },
+
+        {
+            "tags": ["Санитайзеры"],
+            "imgSrc": "/img/foodtrucks/dopi-dezinfekziya-5.jpg",
+            "caption": "Очиститель воздуха",
+            "startPrice1": "5000",
+            "startPrice2": "2500",
+            "id": 43
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "imgSrc": "/img/foodtrucks/dopi-mk-1.jpg",
+            "caption": "Кесадильи",
+            "startPrice1": "22000",
+            "startPrice2": "19000",
+            "id": 44
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "imgSrc": "/img/foodtrucks/dopi-mk-2.jpg",
+            "caption": "Блины",
+            "startPrice1": "20000",
+            "startPrice2": "18000",
+            "id": 45
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "imgSrc": "/img/foodtrucks/dopi-mk-3.jpg",
+            "caption": "BBQ",
+            "startPrice1": "15000",
+            "startPrice2": "14000",
+            "id": 46
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "imgSrc": "/img/foodtrucks/dopi-mk-4.jpg",
+            "caption": "Для детей",
+            "startPrice1": "20000",
+            "startPrice2": "19000",
+            "id": 47
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "imgSrc": "/img/foodtrucks/dopi-mk-5.jpg",
+            "caption": "Чайная церемония",
+            "startPrice1": "15000",
+            "startPrice2": "13000",
+            "id": 48
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "imgSrc": "/img/foodtrucks/dopi-mk-6.jpg",
+            "caption": "Дегустация вина",
+            "startPrice1": "22000",
+            "startPrice2": "18000",
+            "id": 49
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "imgSrc": "/img/foodtrucks/dopi-mk-7.jpg",
+            "caption": "Пиццы",
+            "startPrice1": "16000",
+            "startPrice2": "14000",
+            "id": 50
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "imgSrc": "/img/foodtrucks/dopi-mk-8.jpg",
+            "caption": "Бургеры",
+            "startPrice1": "15000",
+            "startPrice2": "14000",
+            "id": 51
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "imgSrc": "/img/foodtrucks/dopi-mk-9.jpg",
+            "caption": "Суши и ролы",
+            "startPrice1": "14000",
+            "startPrice2": "13000",
+            "id": 52
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "imgSrc": "/img/foodtrucks/dopi-mk-10.jpg",
+            "caption": "Хот-доги",
+            "startPrice1": "15000",
+            "startPrice2": "14000",
+            "id": 53
+        },
+        {
+            "tags": ["Генераторы"],
+            "imgSrc": "/img/foodtrucks/dopi-prochee-1.jpg",
+            "caption": "Генератор 20 кВт",
+            "startPrice1": "25000",
+            "startPrice2": "15000",
+            "id": 54
+        },
+        {
+            "tags": ["Генераторы"],
+            "imgSrc": "/img/foodtrucks/dopi-prochee-1.jpg",
+            "caption": "Генератор 30 кВт",
+            "startPrice1": "32000",
+            "startPrice2": "17000",
+            "id": 55
+        },
+        {
+            "tags": ["Генераторы"],
+            "imgSrc": "/img/foodtrucks/dopi-prochee-1.jpg",
+            "caption": "Генератор 50 кВт",
+            "startPrice1": "39000",
+            "startPrice2": "20000",
+            "id": 56
+        },
+        {
+            "tags": ["Генераторы"],
+            "imgSrc": "/img/foodtrucks/dopi-prochee-4.jpg",
+            "caption": "Подключение",
+            "startPrice1": "6000",
+            "startPrice2": "0",
+            "id": 57
+        },
+        {
+            "tags": ["Генераторы"],
+            "imgSrc": "/img/foodtrucks/dopi-prochee-2.jpg",
+            "caption": "Ограждение",
+            "startPrice1": "650",
+            "startPrice2": "300",
+            "id": 58
+        },
+        {
+            "tags": ["Генераторы"],
+            "imgSrc": "/img/foodtrucks/dopi-prochee-3.jpg",
+            "caption": "Ограждение цветное",
+            "startPrice1": "950",
+            "startPrice2": "350",
+            "id": 59
+        }
+    ]
+}

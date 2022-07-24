@@ -1,0 +1,117 @@
+@import "../const";
+
+.section {
+    background: linear-gradient(93.04deg, #fcfcfc 10.53%, #dcdcdc 92.66%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+
+    @media (max-width: $xl) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.section1 {
+    background: linear-gradient(93.04deg, #dcdcdc 10.53%, #fcfcfc 92.66%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+
+    @media (max-width: $xl) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @media (max-width: $xl) {
+        gap: 10px;
+        row-gap: 20px;
+    }
+
+    @media (max-width: $md) {
+        flex-wrap: wrap;
+    }
+}
+
+.block {
+    width: 270px;
+    text-align: center;
+    @media (max-width: $xl) {
+        width: 160px;
+    }
+}
+
+.imgBlock {
+    position: relative;
+    width: 100%;
+    height: 183px;
+    margin-bottom: 15px;
+    clip-path: polygon(0 4%, 100% 0, 96% 100%, 4% 96%);
+
+    @media (max-width: $xl) {
+        height: 109px;
+    }
+}
+
+.imgBlock2 {
+    clip-path: polygon(4% 4%, 96% 0, 100% 100%, 0 96%);
+}
+
+.imgBlock3 {
+    clip-path: none;
+    border-radius: 10px;
+    height: 160px;
+
+    & span {
+        border-radius: 10px;
+    }
+
+    @media (max-width: $xl) {
+        height: 95px;
+    }
+}
+
+.caption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: pre-wrap;
+
+    @media (max-width: $xl) {
+        font-size: 13px;
+    }
+}
+
+.blockTitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    margin-bottom: 5px;
+
+    @media (max-width: $xl) {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.blockDescr {
+    font-size: 18px;
+    line-height: 21px;
+    color: $gray;
+
+    @media (max-width: $xl) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

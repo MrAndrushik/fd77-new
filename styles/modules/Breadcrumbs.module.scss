@@ -1,0 +1,53 @@
+@import "../const";
+
+.block {
+    padding: 0 15px;
+    display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+
+    @media (max-width: $xl) {
+        margin-bottom: 20px;
+    }
+}
+
+.list {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.crumbActive {
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.line {
+    display: block;
+    width: 4px;
+    height: 1px;
+    background: $black;
+}
+
+.crumb {
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.span {
+    display: flex;
+    align-items: center;
+}

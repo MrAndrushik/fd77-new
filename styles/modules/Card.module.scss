@@ -1,0 +1,189 @@
+@import "../const";
+
+.block {
+    position: relative;
+    width: 367px;
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    z-index: 2;
+    @media (max-width: $xl) {
+        width: 330px;
+    }
+
+    @media (max-width: $md) {
+        max-width: 330px;
+        min-width: 300px;
+        width: 100%;
+    }
+}
+
+.selected {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    z-index: 2;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.favorite {
+    cursor: pointer;
+    position: absolute;
+    right: 14px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    border-radius: 50%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    top: 14px;
+    z-index: 2;
+}
+
+.imgBlock {
+    width: 100%;
+    height: 229px;
+    position: relative;
+
+    & span {
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.titleBlock {
+    height: 66px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #d3d3d3;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media (max-width: $xl) {
+        height: 60px;
+    }
+}
+
+.caption {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.priceBlock {
+    display: flex;
+    height: 64px;
+    border-bottom: 1px solid #d3d3d3;
+
+    @media (max-width: $xl) {
+        height: 57px;
+    }
+}
+
+.priceItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &:last-child {
+        border-left: 1px solid #d3d3d3;
+    }
+
+    & > span {
+        font-size: 12px;
+        line-height: 14px;
+        opacity: 0.5;
+    }
+}
+
+.price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+
+    @media (max-width: $xl) {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.buttonBlock {
+    height: 66px;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+
+    @media (max-width: $xl) {
+        height: 60px;
+    }
+}
+
+.btn {
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    color: $gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 10px;
+    transition: $transition;
+
+    &:hover {
+        background-color: $black;
+        color: #fff;
+    }
+}
+
+.bucketBtn {
+    border-left: 1px solid #d3d3d3;
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    color: $gray;
+    border-radius: 0 0 10px 0;
+    transition: $transition;
+
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+    }
+}
+
+.quantityBlock {
+    width: 100%;
+    border-left: 1px solid $gray;
+    border-radius: 0 0 10px 0;
+    background: $gray;
+    font-size: 26px;
+    line-height: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & button {
+        opacity: 0.5;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        transition: all 0.1s ease;
+        height: 100%;
+    }
+
+    & button:hover {
+        opacity: 1;
+    }
+}

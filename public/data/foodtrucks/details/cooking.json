@@ -1,0 +1,45 @@
+{
+    "title": "На чём готовить?",
+    "catalog": [
+        {
+            "imgSrc": "/img/foodtrucks/cook-upd-1.jpg",
+            "title": "Гриль",
+            "descr": "2000 ₽/сутки"
+        },
+        {
+            "imgSrc": "/img/foodtrucks/cook-2.jpg",
+            "title": "Фритюрница",
+            "descr": "3500 ₽/сутки"
+        },
+        {
+            "imgSrc": "/img/foodtrucks/cook-3.jpg",
+            "title": "Кофемашина",
+            "descr": "2500 ₽/сутки"
+        },
+        {
+            "imgSrc": "/img/foodtrucks/cook-4.jpg",
+            "title": "Духовый шкаф",
+            "descr": "6000 ₽/сутки"
+        },
+        {
+            "imgSrc": "/img/foodtrucks/cook-upd-2.jpg",
+            "title": "Аппарат попкорн",
+            "descr": "4000 ₽/сутки"
+        },
+        {
+            "imgSrc": "/img/foodtrucks/cook-upd-3.jpg",
+            "title": "Аппарат хот-доги",
+            "descr": "8000 ₽/сутки"
+        },
+        {
+            "imgSrc": "/img/foodtrucks/cook-upd-4.jpg",
+            "title": "Сахарная вата",
+            "descr": "5000 ₽/сутки"
+        },
+        {
+            "imgSrc": "/img/foodtrucks/cook-upd-5.jpg",
+            "title": "Яблоки в карамели",
+            "descr": "4600 ₽/сутки"
+        }
+    ]
+}

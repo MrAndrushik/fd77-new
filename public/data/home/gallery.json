@@ -1,0 +1,71 @@
+{
+    "tags": ["Все", "Фудтраки", "Киоски, шатры", "Мастер-классы", "Мебель"],
+    "title": "Как это выглядит в деле",
+    "catalog": [
+        {
+            "tags": ["Фудтраки"],
+            "gallery": [
+                "/img/home/foodtruck-gallery-1.jpg",
+                "/img/home/foodtruck-gallery-2.jpg",
+                "/img/home/foodtruck-gallery-3.jpg",
+                "/img/home/foodtruck-gallery-4.jpg",
+                "/img/home/foodtruck-gallery-5.jpg",
+                "/img/home/foodtruck-gallery-6.jpg",
+                "/img/home/foodtruck-gallery-7.jpg",
+                "/img/home/foodtruck-gallery-8.jpg",
+                "/img/home/foodtruck-gallery-9.jpg",
+                "/img/home/foodtruck-gallery-10.jpg",
+                "/img/home/foodtruck-gallery-11.jpg",
+                "/img/home/foodtruck-gallery-12.jpg"
+            ]
+        },
+        {
+            "tags": ["Киоски, шатры"],
+            "gallery": [
+                "/img/home/foodtruck-gallery-shatri-kioski-1.jpg",
+                "/img/home/foodtruck-gallery-shatri-kioski-2.jpg",
+                "/img/home/foodtruck-gallery-shatri-kioski-3.jpg",
+                "/img/home/foodtruck-gallery-shatri-kioski-4.jpg",
+                "/img/home/foodtruck-gallery-shatri-kioski-5.jpg",
+                "/img/home/foodtruck-gallery-shatri-kioski-6.jpg",
+                "/img/home/foodtruck-gallery-shatri-kioski-7.jpg",
+                "/img/home/foodtruck-gallery-shatri-kioski-8.jpg",
+                "/img/home/foodtruck-gallery-shatri-kioski-9.jpg",
+                "/img/home/foodtruck-gallery-shatri-kioski-10.jpg"
+            ]
+        },
+        {
+            "tags": ["Мастер-классы"],
+            "gallery": [
+                "/img/home/foodtruck-gallery-mk-1.jpg",
+                "/img/home/foodtruck-gallery-mk-2.jpg",
+                "/img/home/foodtruck-gallery-mk-3.jpg",
+                "/img/home/foodtruck-gallery-mk-4.jpg",
+                "/img/home/foodtruck-gallery-mk-5.jpg",
+                "/img/home/foodtruck-gallery-mk-6.jpg",
+                "/img/home/foodtruck-gallery-mk-7.jpg",
+                "/img/home/foodtruck-gallery-mk-8.jpg",
+                "/img/home/foodtruck-gallery-mk-9.jpg",
+                "/img/home/foodtruck-gallery-mk-10.jpg",
+                "/img/home/foodtruck-gallery-mk-11.jpg",
+                "/img/home/foodtruck-gallery-mk-12.jpg"
+            ]
+        },
+        {
+            "tags": ["Мебель"],
+            "gallery": [
+                "/img/home/foodtruck-gallery-mebel-1.jpg",
+                "/img/home/foodtruck-gallery-mebel-2.jpg",
+                "/img/home/foodtruck-gallery-mebel-3.jpg",
+                "/img/home/foodtruck-gallery-mebel-4.jpg",
+                "/img/home/foodtruck-gallery-mebel-5.jpg",
+                "/img/home/foodtruck-gallery-mebel-6.jpg",
+                "/img/home/foodtruck-gallery-mebel-7.jpg",
+                "/img/home/foodtruck-gallery-mebel-8.jpg",
+                "/img/home/foodtruck-gallery-mebel-9.jpg",
+                "/img/home/foodtruck-gallery-mebel-10.jpg",
+                "/img/home/foodtruck-gallery-mebel-11.jpg"
+            ]
+        }
+    ]
+}

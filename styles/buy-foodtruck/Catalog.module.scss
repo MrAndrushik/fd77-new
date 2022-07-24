@@ -1,0 +1,150 @@
+@import "../const";
+
+.block {
+    padding: 50px 0;
+    background: linear-gradient(93.04deg, #fcfcfc 10.53%, #dcdcdc 92.66%);
+}
+
+.block2 {
+    background: linear-gradient(93.04deg, #dcdcdc 10.53%, #fcfcfc 92.66%);
+    padding: 50px 0;
+    & .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    @media (max-width: $xl) {
+        & .container {
+            flex-direction: column;
+        }
+    }
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $xl) {
+        flex-direction: column;
+    }
+}
+
+.swiper {
+    width: 559px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    @media (max-width: $xl) {
+        width: auto;
+        padding-bottom: 10px;
+    }
+}
+
+.swiperSlide {
+    margin-bottom: 20px;
+
+    @media (max-width: $xl) {
+        width: 100%;
+    }
+}
+
+.imgBlock {
+    position: relative;
+    border-radius: 20px;
+
+    & span {
+        border-radius: 20px;
+    }
+}
+
+.content {
+    width: 560px;
+    color: $gray;
+
+    @media (max-width: $xl) {
+        width: 100%;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    margin-bottom: 10px;
+
+    @media (max-width: $xl) {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
+.descr {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.parametrsBlock {
+    display: flex;
+    column-gap: 30px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.caption {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $middle-gray;
+    margin-bottom: 7px;
+}
+
+.value {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+.list {
+    margin-bottom: 40px;
+}
+
+.listItem {
+    position: relative;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 18px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 5px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: $gray;
+        top: 7px;
+    }
+}
+
+.priceBlock {
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    line-height: 21px;
+    background: $blue;
+    border-radius: 10px;
+    padding: 12px 36px;
+}

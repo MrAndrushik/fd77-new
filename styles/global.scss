@@ -1,0 +1,1057 @@
+@import "const";
+@import "fonts";
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    font-weight: 400;
+}
+
+html,
+body {
+    -ms-overflow-style: none; // IE 10+
+    scrollbar-width: thin;
+    overflow-x: hidden;
+}
+
+html {
+    overflow: -moz-scrollbars-none;
+}
+
+body {
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    background: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+section {
+    margin-bottom: 120px;
+
+    @media (max-width: $xl) {
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: $md) {
+        margin-bottom: 80px;
+    }
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: $light-gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $blue;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.container {
+    max-width: $xl;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+
+    @media (max-width: $xl) {
+        max-width: $md;
+    }
+
+    @media (max-width: $md) {
+        max-width: 100%;
+    }
+}
+
+.stn-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+
+    @media (max-width: $xl) {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
+// HEADER START //
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header--fixed {
+    position: fixed;
+}
+
+.header__overlay {
+    opacity: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #10101050;
+    transition: $transition;
+}
+
+.header__overlay--active {
+    z-index: 90;
+    opacity: 1;
+}
+
+.header-top {
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    position: relative;
+
+    @media (max-width: $xl) {
+        display: none;
+    }
+}
+
+.header-top--none {
+    display: none;
+}
+
+.header-top__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-top__social {
+    height: 100%;
+    display: flex;
+    width: 148px;
+}
+
+.header-top__social-item {
+    width: 152px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.1s ease;
+
+    &:hover {
+        background-color: $blue;
+
+        & svg path {
+            fill: #fff;
+        }
+    }
+}
+
+.header-top__block {
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    height: 100%;
+    align-items: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+
+    &:last-child {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    transition: all 0.1s ease;
+
+    &:hover {
+        background-color: $blue;
+
+        & .header-top__link {
+            color: #ffffff;
+        }
+
+        & svg path {
+            fill: #fff;
+        }
+    }
+}
+
+.header-top__block-1 {
+    width: 279px;
+}
+
+.header-top__block-2 {
+    width: 276px;
+}
+
+.header-top__block-3 {
+    width: 195px;
+}
+
+.header-top__block-4 {
+    width: 242px;
+}
+
+.header-top__link {
+    display: flex;
+    gap: 4px;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    transition: all 0.1s ease;
+}
+
+.header-top__tel {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.header-bottom {
+    background-color: $black;
+    height: 60px;
+    z-index: 2;
+    position: relative;
+
+    @media (max-width: $xl) {
+        height: 48px;
+    }
+}
+
+.header-bottom__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $xl) {
+        justify-content: space-between;
+    }
+}
+
+.header-bottom__burger {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    & svg path {
+        transition: all 0.1s ease;
+    }
+
+    &:hover svg path {
+        fill: $blue;
+    }
+
+    & a {
+        transition: all 0.1s ease;
+    }
+
+    &:hover a {
+        color: $blue;
+    }
+}
+
+.header-bottom__text {
+    font-family: "RocknRoll One";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #fff;
+    text-transform: uppercase;
+
+    @media (max-width: $md) {
+        color: $blue;
+    }
+}
+
+.header-bottom__logo-block {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 350px;
+
+    & span {
+        transition: all 0.1s ease-in;
+    }
+
+    &:hover span {
+        color: $blue;
+    }
+
+    @media (max-width: $xl) {
+        margin-left: 0;
+    }
+
+    @media (max-width: $md) {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.header-bottom__logo {
+    position: relative;
+    width: 72px;
+    height: 40px;
+
+    @media (max-width: $md) {
+        display: none;
+    }
+}
+
+.header-bottom__buttons {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-left: auto;
+
+    @media (max-width: $xl) {
+        margin-left: 0;
+    }
+}
+
+.header-bottom__search-input {
+    width: 250px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #646464;
+    color: #fff;
+    font-size: 18px;
+    background: transparent;
+    outline: none;
+}
+
+.header-bottom__search-block {
+    position: relative;
+}
+
+.search {
+    position: absolute;
+    background: #f4f4f4;
+    padding-bottom: 50px;
+    box-shadow: 0px 4px 20px rgba(0, 20, 36, 0.5);
+    width: 100%;
+    max-height: 400px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $blue;
+    }
+
+    @media (max-width: $xl) {
+        top: 60px;
+        width: calc($md - 30px);
+        left: 0;
+    }
+
+    @media (max-width: $md) {
+        width: 100vw;
+        left: -15px;
+        max-height: unset;
+        height: calc(100vh - 108px);
+    }
+}
+
+.seacrh__result {
+    margin-bottom: 25px;
+    padding-top: 17px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $gray;
+    padding-left: 15px;
+    padding-right: 5px;
+    text-align: left;
+}
+
+.search__list {
+    background: #fff;
+}
+
+.search__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.search__imgBlock {
+    min-width: 75px;
+}
+
+.search__text {
+    font-family: "Roboto Slab";
+    cursor: pointer;
+    font-weight: 400;
+    text-align: left;
+    font-size: 16px;
+    line-height: 21px;
+    color: #646464;
+    transition: all 0.1s ease;
+
+    &:hover {
+        text-decoration: underline;
+        color: $blue;
+    }
+}
+
+.header-bottom__search-close {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    z-index: 3;
+}
+
+.header-bottom__search {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom__favorites,
+.header-bottom__cart {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.header-bottom__circle {
+    min-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: $blue;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50%;
+    right: -50%;
+}
+
+@media (max-width: $xl) {
+    .header__desktop {
+        display: none;
+    }
+}
+
+.header-outter {
+    transition: $transition;
+    width: 100%;
+    background: $black;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+
+    &--active {
+        opacity: 1;
+        height: auto;
+        padding: 30px 0 54px 0;
+        overflow: unset;
+    }
+
+    @media (max-width: $xl) {
+        &--active {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.header__icon {
+    fill: #3ba8c0 !important;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $xl) {
+        gap: 20px;
+        justify-content: flex-start;
+        padding: 18px 15px;
+    }
+
+    @media (max-width: $md) {
+        flex-direction: column;
+        gap: 0;
+        padding: 25px 0;
+    }
+}
+
+.nav__list {
+    display: flex;
+    max-width: 460px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    row-gap: 30px;
+
+    & > .nav__item:nth-child(2n) {
+        padding-left: 70px;
+    }
+
+    @media (max-width: $xl) {
+        max-width: 360px;
+        justify-content: flex-start;
+        gap: 0;
+
+        & > .nav__item:nth-child(2n) {
+            padding-left: 0px;
+        }
+    }
+
+    @media (max-width: $md) {
+        max-width: 100%;
+        gap: 20px 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.nav__link {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+
+    & path {
+        transition: all 0.1s ease-in;
+    }
+
+    &:hover {
+        color: $blue;
+    }
+
+    &:hover path {
+        fill: $blue;
+    }
+}
+
+.nav__item {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $md) {
+        width: unset;
+    }
+}
+
+.nav__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    & .nav__link {
+        width: 100%;
+        font-size: 16px;
+        line-height: 21px;
+        color: #646464;
+        transition: all 0.1s ease-in;
+    }
+
+    & .nav__link:hover {
+        color: $blue;
+    }
+
+    @media (max-width: $xl) {
+        padding: 10px 0;
+    }
+
+    @media (max-width: $md) {
+        flex-direction: row;
+        margin-top: 25px;
+        border-top: 1px solid $gray;
+        gap: 20px 30px;
+        flex-wrap: wrap;
+        padding: 25px 15px 0 15px;
+        & .nav__link {
+            width: unset;
+        }
+    }
+}
+
+.nav__tel-block {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 9px;
+    cursor: pointer;
+
+    @media (max-width: $xl) {
+        display: none;
+    }
+}
+
+.nav__tel {
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    color: #ffffff;
+}
+
+.header-outter__top {
+    border-bottom: 1px solid $gray;
+    border-top: 1px solid $gray;
+
+    @media (max-width: $xl) {
+        padding-left: calc((100% - $md + 30px) / 2);
+        padding-right: calc((100% - $md + 30px) / 2);
+    }
+
+    @media (max-width: $md) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.header-outter__search-block {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-right: 1px solid $gray;
+    padding: 18px 0;
+    height: 100%;
+    padding-right: 18px;
+    gap: 5px;
+}
+
+.header-outter__search-input {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Roboto Slab";
+    color: #ffffff;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.header-outter__favorites-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 0;
+    justify-content: flex-end;
+
+    & a {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        font-family: "Roboto Slab";
+        color: #ffffff;
+    }
+}
+
+.header-outter__favorites {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+
+    & span {
+        opacity: 0.5;
+    }
+}
+
+.header-outter__circle {
+    font-family: "Roboto";
+    min-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: $blue;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+
+.header-tablet {
+    display: none;
+
+    @media (max-width: $xl) {
+        display: flex;
+    }
+}
+
+.header-outter__bottom {
+    border-bottom: 1px solid $gray;
+    border-top: 1px solid $gray;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    @media (max-width: $xl) {
+        display: flex;
+        padding-left: calc((100% - $md + 30px) / 2);
+        padding-right: calc((100% - $md + 30px) / 2);
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: $md) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.header-outter__link-1 {
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-outter__flex {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+// HEADER END //
+
+// FOOTER START
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: $black;
+
+    @media (max-width: $md) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (max-width: $md) {
+        gap: 40px;
+    }
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $md) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.foter-top__social {
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+
+    & svg path {
+        transition: all 0.1s ease-in;
+    }
+
+    &:hover svg path {
+        fill: $blue;
+    }
+}
+
+.footer-top__text {
+    font-family: "RocknRoll One";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #fff;
+    text-transform: uppercase;
+
+    @media (max-width: $xl) {
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: -0.2em;
+        color: #3ba8c0;
+    }
+}
+
+.footer-top__logo-block {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-left: 80px;
+
+    & span {
+        transition: all 0.1s ease-in;
+    }
+
+    &:hover span {
+        color: $blue;
+    }
+
+    @media (max-width: $xl) {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    @media (max-width: $md) {
+        flex-direction: row;
+        gap: 15px;
+        padding-left: 0px;
+        order: -2;
+        margin-bottom: 40px;
+    }
+}
+
+.footer-top__logo {
+    @media (max-width: $xl) {
+        display: none;
+    }
+
+    @media (max-width: $md) {
+        display: flex;
+    }
+}
+
+.footer-top__block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: $md) {
+        order: -1;
+        margin-bottom: 15px;
+    }
+}
+
+.footer-top__link {
+    cursor: pointer;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $md) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+.footer-bottom__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    opacity: 0.2;
+
+    @media (max-width: $md) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.footer-bottom__text--privacy {
+    color: $gray;
+    opacity: 1;
+    transition: all 0.1s ease-in;
+
+    @media (max-width: $md) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+// FOOTER END
+
+// SLIDER SETTINGS
+
+.swiper-slide::after {
+    transition: $transition;
+    position: absolute;
+    content: "";
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.swiper-slide-active::after {
+    opacity: 0;
+    z-index: -1;
+}
+
+.swiper-light .swiper-slide::after {
+    opacity: 0;
+}
+
+.upsale__swiper .swiper-slide::after {
+    opacity: 0;
+}
+
+.gallery__swiper .swiper-slide::after {
+    display: none;
+}
+
+.gallery__swiper .slide-wrapper > div::after {
+    transition: $transition;
+    position: absolute;
+    content: "";
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.gallery__swiper .swiper-slide-active .slide-wrapper > div::after {
+    opacity: 0;
+}
+
+.gallery__swiper .slide-wrapper {
+    padding: 40px;
+    transition: $transition;
+
+    @media (max-width: $xl) {
+        padding: 20px;
+    }
+}
+
+.gallery__swiper .swiper-slide-active .slide-wrapper {
+    transform: scale(1.2);
+
+    @media (max-width: $md) {
+        padding: 20px;
+        // padding: 0;
+        // transform: scale(1);
+    }
+}
+
+.privacy {
+    padding-top: 160px;
+
+    @media (max-width: $xl) {
+        padding-top: 80px;
+    }
+}
+
+.privacy__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 74px;
+    margin-bottom: 30px;
+
+    @media (max-width: $xl) {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 10px;
+    }
+}
+
+.privacy__text {
+    font-family: "Roboto Slab";
+    font-size: 18px;
+    color: $black;
+    margin-bottom: 20px;
+
+    @media (max-width: $xl) {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,259 @@
+@import "../const";
+
+.section {
+    position: relative;
+    padding-top: 140px;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    @media (max-width: $xl) {
+        padding-top: 88px;
+        padding-bottom: 40px;
+    }
+}
+
+.section1 {
+    position: relative;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.mainTitle {
+    padding: 0 15px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 74px;
+    text-align: center;
+    max-width: 986px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @media (max-width: $xl) {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 30px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    row-gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+    @media (max-width: $xl) {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: $md) {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+.block {
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventLink {
+    width: 32%;
+
+    @media (max-width: $md) {
+        width: unset;
+        max-width: 330px;
+    }
+}
+
+.imgBlock {
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 10px;
+
+    @media (max-width: $md) {
+    }
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 18px;
+    padding: 0 20px;
+
+    @media (max-width: $xl) {
+        padding: 0 6px;
+    }
+
+    @media (max-width: $md) {
+        margin-bottom: 14px;
+    }
+}
+
+.textBlock {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 754px;
+    text-align: center;
+    margin-top: 50px;
+
+    color: $gray;
+    font-size: 22px;
+    line-height: 29px;
+    align-items: center;
+    font-family: "Roboto Slab";
+
+    & p {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: $md) {
+        font-size: 18px;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    @media (max-width: $xl) {
+        margin-top: 30px;
+    }
+}
+
+.descrTitle {
+    text-align: center;
+    color: $black;
+    font-size: 36px;
+    line-height: 47px;
+    margin-bottom: 20px;
+    font-weight: 400;
+
+    @media (max-width: $xl) {
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: $md) {
+        font-size: 22px;
+        line-height: 29px;
+    }
+}
+
+.caption {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+    @media (max-width: $xl) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    @media (max-width: $md) {
+        margin-bottom: 4px;
+    }
+}
+
+.descr {
+    font-size: 14px;
+    line-height: 16px;
+    color: $gray;
+
+    @media (max-width: $xl) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.detail {
+    border-top: 1px solid #d3d3d3;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    color: #828282;
+    border-radius: 0 0 10px 10px;
+    transition: $transition;
+
+    &:hover {
+        background-color: $black;
+        color: #fff;
+    }
+    @media (max-width: $xl) {
+        padding: 12px;
+    }
+
+    @media (max-width: $md) {
+        padding: 20px 12px;
+    }
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    padding: 12px 28px;
+    background: #3ba8c0;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+
+    transition: all 0.1s ease-in;
+
+    &:hover {
+        background: $black;
+    }
+}
+
+.swiper {
+    padding: 0 15px;
+    margin-bottom: 50px;
+    @media (max-width: $md) {
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+.swiperSlide {
+    width: auto;
+    position: relative;
+}
+
+.slide {
+    transition: $transition;
+    width: 644px;
+    height: 347px;
+    position: relative;
+
+    & > span {
+        border-radius: 10px;
+    }
+
+    @media (max-width: $xl) {
+        width: 380px;
+        height: 204px;
+    }
+
+    @media (max-width: $md) {
+        width: 277px;
+        height: 149px;
+    }
+}
